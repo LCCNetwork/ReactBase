@@ -36,8 +36,6 @@ module.exports = {
         loader: 'file-loader'
       }
     ]
-  }
-    ]
   },
   plugins: [
     new ExtractTextPlugin('styles.css')
