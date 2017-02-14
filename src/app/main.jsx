@@ -6,15 +6,15 @@ import { Router, Route, Link, browserHistory } from 'react-router'
 import injectTapEventPlugin from 'react-tap-event-plugin'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import style from './main.scss'
+import komika from './fonts/komika_axis_reg.ttf'
 
 class App extends React.Component {
   render () {
     return (
       <div>
         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' />
-        <MuiThemeProvider>
-          <Header />
-        </MuiThemeProvider>
+        <Header />
+        <Body />
       </div>
     )
   }
@@ -42,7 +42,12 @@ class Body extends React.Component {
     return (
       <div>
         <div className='showcase'>
-          <p>test</p>
+          <img className='showcase-bg1' src={require('./images/showcase_bg_1.png')} />
+          <p className='showcase-title'> LCC NETWORK </p>
+        </div>
+
+        <div className='info'>
+          <p> asdasdasd </p>
         </div>
       </div>
     )
